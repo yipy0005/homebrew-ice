@@ -4,11 +4,11 @@ cask "ice" do
 
   url "https://github.com/yipy0005/Ice/releases/download/v#{version}-macos27/Ice-#{version}.zip"
   name "Ice"
-  desc "Menu bar manager (unofficial macOS 27 port)"
+  desc "Menu bar manager (unofficial fork build)"
   homepage "https://github.com/yipy0005/Ice"
 
   conflicts_with cask: "jordanbaird-ice"
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "Ice.app"
 
